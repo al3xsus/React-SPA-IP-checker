@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React-SPA-IP-check
 
-## Available Scripts
+Простое SPA для получения информации по IP адресу. 
+Использован стек технологий React (create-react-app), Semantic UI React, SPA, localStorage.
+Для получения информации об IP было использовано API [https://2ip.ua/ru/api/our-api](https://2ip.ua/ru/api/our-api).
+**Внимание, количество ежедневных запросов ограниченно.**
 
-In the project directory, you can run:
+## Как это работает
 
-### `npm start`
+SPA состоит из трёх секций - формы ввода IP адреса, секции текущего результата запроса и секции истории запросов.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+В форме пользователь вводит IP адрес в строку ввода и нажимает кнопку `Get Info`. Если строка ввода пуста или адрес не 
+соответствует IP адресу (т.е. будет чем-то иным, нежели запись в виде четырёх десятичных чисел значением от 0 до 255, 
+разделённых точками) то строка ввода будет подсвечена красным цветом, а кнопка `Get Info` будет неактивна.
+В случае успеха результат запроса будет добавлен в историю и показан на секциях текущего результата и истории 
+соответственно. В случае ввода нового адреса текущий результат будет обнулён.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Секция текущего результата представляет собой информационную панель разделенную на три поля - IP адрес, его 
+географическая информация и информация о провайдере.
 
-### `npm test`
+Секция истории запросов представляет собой множество информационных панелей по каждому предыдущему запросу.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+При старте приложения, если существует не пустое localStorage хранилище, данные будут получены из него.
+При закрытии приложения (перезагрузка страницы или перезаход на неё) данные будут записаны в localStorage.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Скрипты
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Запускать из папки с проектом:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `yarn add`
 
-### `npm run eject`
+Для установки модулей
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### `yarn start`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Запускает приложение в режиме разработки по адресу [http://localhost:3000](http://localhost:3000).
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### `yarn build`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Для сборки в папку `build`.
 
-## Learn More
+### `yarn global add serve`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Для установки локального сервера.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `serve -s build`
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Для запуска собранного на локальном сервере.
