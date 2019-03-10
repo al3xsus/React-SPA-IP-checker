@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { Container, Form, Divider, Segment, Loader } from 'semantic-ui-react'
+import React, {Component} from 'react';
+import {Container, Divider, Form, Loader, Segment} from 'semantic-ui-react'
 
 import ResultForm from '../Components/ResultForm'
 import Stub from '../Components/Stub'
 import FormHeader from '../Components/FormHeader'
-import { checkInput } from "../Components/AuxFns";
+import {checkInput} from "../Components/AuxFns";
 
 class MainFormContainer extends Component {
 
@@ -67,8 +67,8 @@ class MainFormContainer extends Component {
     };
 
     loadData = async () => {
-        const { currentSearch } = this.state
-        this.setState({ isLoading: true })
+        const {currentSearch} = this.state;
+        this.setState({isLoading: true});
         try {
             let [geoIP, providerIP] = await Promise.all([
                 fetch(`https://api.2ip.ua/geo.json?ip=${currentSearch}`),
@@ -92,7 +92,8 @@ class MainFormContainer extends Component {
     }
 
     returnOldDataList = (oldData) => {
-        return oldData.map((data,i) => <ResultForm key={i} currentResult={[data[0], data[1], data[2]]}/>);
+        let newData = oldData.reverse()
+        return newData.map((data, i) => <ResultForm key={i} currentResult={[data[0], data[1], data[2]]}/>);
     }
 
     render() {
@@ -109,7 +110,7 @@ class MainFormContainer extends Component {
             <div className="App">
                 <Container text>
                     <FormHeader/>
-                    <Segment>
+                    <Segment id="IP_input_form">
                         <Form>
                             <Form.Input
                                 placeholder='Input IP here'
@@ -128,13 +129,13 @@ class MainFormContainer extends Component {
                         </Form>
                     </Segment>
                     <Divider horizontal>Results</Divider>
-                    <Segment placeholder>
+                    <Segment id="IP_result_current" placeholder>
                         { currentResult ? <ResultForm currentResult={[currentSearch, ...currentResult]} /> :
                             <Stub/>
                         }
                     </Segment>
                     <Divider horizontal>History</Divider>
-                    <Segment placeholder>
+                    <Segment id="IP_result_history" placeholder>
                         { oldData ? this.returnOldDataList(oldData) :
                             <Stub/>
                         }

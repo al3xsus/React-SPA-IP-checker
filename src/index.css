@@ -6,9 +6,40 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    background-color: #fff;
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+ul.header {
+    list-style-type: none;
+    margin: 0;
+    padding: 20% 0 0;
+    width: 8%;
+    background-color: #fff;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.header li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ul.header li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.header li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
 }
