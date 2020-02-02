@@ -1,15 +1,25 @@
 {
   "name": "react-spa-ip-check",
   "version": "0.9.1",
+  "author": {
+    "name": "Alexandr Lavrentyev",
+    "email": "al3xsus@pm.me"
+  },
+  "contributors": [
+    {
+      "name": "Alexandr Lavrentyev",
+      "email": "al3xsus@pm.me"
+    }
+  ],
   "private": true,
   "dependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-json-pretty": "^2.0.0",
-    "react-router-dom": "^4.3.1",
+    "react-router-dom": "^5.1.2",
     "react-router-hash-link": "^1.2.1",
-    "react-scripts": "2.1.8",
-    "semantic-ui-react": "^0.85.0"
+    "react-scripts": "3.3.1",
+    "semantic-ui-react": "^0.88.2"
   },
   "scripts": {
     "start": "react-scripts start",

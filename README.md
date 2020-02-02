@@ -1,65 +1,70 @@
 # React-SPA-IP-check
 
-Простое SPA для получения информации по IP адресу. 
-Использован стек технологий React (create-react-app), Semantic UI React, SPA, localStorage.
-Для получения информации об IP было использовано API [https://2ip.ua/ru/api/our-api](https://2ip.ua/ru/api/our-api).
-**Внимание, количество ежедневных запросов ограниченно.**
+[Версия на русском языке](README_ru.md)
 
-## Как это работает
+A simple SPA to get information about IP address.
 
-SPA состоит из трёх секций - формы ввода IP адреса, секции текущего результата запроса и секции истории запросов.
+Used stack: React (create-react-app), Semantic UI React, SPA, localStorage.
 
-В форме пользователь вводит IP адрес в строку ввода и нажимает кнопку `Get Info`. Если строка ввода пуста или адрес не 
-соответствует IP адресу (т.е. будет чем-то иным, нежели запись в виде четырёх десятичных чисел значением от 0 до 255, 
-разделённых точками) то строка ввода будет подсвечена красным цветом, а кнопка `Get Info` будет неактивна.
-В случае успеха результат запроса будет добавлен в историю и показан на секциях текущего результата и истории 
-соответственно. В случае ввода нового адреса текущий результат будет обнулён.
+The API [https://2ip.ua/ru/api/our-api](https://2ip.ua/ru/api/our-api) was used as information source.
 
-Секция текущего результата представляет собой информационную панель разделенную на три поля - IP адрес, его 
-географическая информация и информация о провайдере.
+**Warning, amount of daily requests is limited.**
 
-Секция истории запросов представляет собой множество информационных панелей по каждому предыдущему запросу.
+## How it works
 
-При старте приложения, если существует не пустое localStorage хранилище, данные будут получены из него.
-При закрытии приложения (перезагрузка страницы или перезаход на неё) данные будут записаны в localStorage.
+SPA consists of three sections - an IP address input form, a section of the current query result and a request history 
+section.
 
-Передвигаться по SPA можно с помощью небольшой навигационной панели слева.
+In the form, the user enters the IP address into the input line and clicks the `Get Info` button. If the input line is 
+empty or the address is not corresponds to the IP address (i.e. it will be something other than a record in the form of 
+four decimal numbers with a value from 0 to 255, separated by dots) the input line will be highlighted in red and the 
+`Get Info` button will be inactive. If successful, the query result will be added to the history and shown on the 
+sections of the current result and history
+respectively. If you enter a new address, the current result will be reset to zero.
 
+The section of the current result is an information panel divided into three fields - IP address, its geographic 
+information and provider information.
 
-## Скрипты
+The query history section is a collection of dashboards for each previous request.
 
-Запускать из папки с проектом:
+When the application starts, if there is some records in localStorage storage, the data will be obtained from it.
+When you close the application (reloading the page or switching to it), the data will be written to localStorage.
 
-### `yarn add`
+You can navigate through the SPA using the small navigation bar on the left.
 
-Для установки модулей
+## Scripts
+
+Run from the project folder:
+
+### `yarn`
+
+To install modules
 
 ### `yarn start`
 
-Запускает приложение в режиме разработки по адресу [http://localhost:3000](http://localhost:3000).
+Launches the application in development mode at [http: // localhost: 3000] (http: // localhost: 3000).
 
 ### `yarn build`
 
-Для сборки в папку `build`.
+To build in the `build` folder.
 
 ### `yarn global add serve`
 
-Для установки локального сервера.
+To install a local server.
 
 ### `serve -s build`
 
-Для запуска собранного на локальном сервере.
+To run collected on a local server.
 
-## Скриншоты
+## Screenshots
+IP address input form
 
-Форма ввода IP
+![IP address input form](screenshots/1-input.png?raw=true "IP address input form")
 
-![Форма ввода IP](screenshots/screenshot_1.png?raw=true "Форма ввода IP")
+Current result
 
-Текущий результат
+![Current result](screenshots/2-result.png?raw=true "Current result")
 
-![Текущий результат](screenshots/screenshot_2.png?raw=true "Текущий результат")
+ History of requests
 
-История запросов
-
-![История запросов](screenshots/screenshot_3.png?raw=true "История запросов")
+![History of requests](screenshots/3-history.png?raw=true "History of requests")

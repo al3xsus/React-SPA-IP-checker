@@ -5,30 +5,30 @@ import MainFormContainer from './Containers/MainFormContainer';
 import './App.css';
 
 const App = () => (
-    <Fragment>
-        <header>
-            <ul className={"header"}>
-                <li>
-                    <Link smooth="true" to="#IP_input_form">
-                        Input form
-                    </Link>
-                </li>
-                <li>
-                    <Link smooth="true" to="#IP_result_current">
-                        Results
-                    </Link>
-                </li>
-                <li>
-                    <Link smooth="true" to="#IP_result_history">
-                        History
-                    </Link>
-                </li>
-            </ul>
-        </header>
-      <main>
-          <Route exact path="/" component={MainFormContainer}/>
-      </main>
-    </Fragment>
+  <Fragment>
+    <header>
+      <ul className={"header"}>
+        <li>
+          <Link smooth="true" to="#IP_input_form">
+            Input form
+          </Link>
+        </li>
+        <li>
+          <Link smooth="true" to="#IP_result_current">
+            Results
+          </Link>
+        </li>
+        <li>
+          <Link smooth="true" to="#IP_result_history">
+            History
+          </Link>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <Route exact path="/" component={MainFormContainer}/>
+    </main>
+  </Fragment>
 );
 
 export default App;
