@@ -24,7 +24,7 @@ class MainFormContainer extends Component {
   }
   
   componentDidMount() {
-    localStorage.clear();
+    // localStorage.clear();
     this.hydrateStateWithLocalStorage();
     window.addEventListener(
       "beforeunload",

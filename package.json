@@ -1,6 +1,6 @@
 {
   "name": "react-spa-ip-check",
-  "version": "0.9.1",
+  "version": "1.0.0",
   "author": {
     "name": "Alexandr Lavrentyev",
     "email": "al3xsus@pm.me"
@@ -11,6 +11,19 @@
       "email": "al3xsus@pm.me"
     }
   ],
+  "homepage": "https://al3xsus.github.io/React-SPA-IP-checker/",
+  "license": "MIT",
+  "keywords": [
+    "spa",
+    "localstorage",
+    "react",
+    "semantic-ui-react"
+  ],
+  "description": "A simple SPA to obtain data about IP address",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/al3xsus/React-SPA-IP-checker"
+  },
   "private": true,
   "dependencies": {
     "react": "^16.8.4",
@@ -29,6 +42,11 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "engines": {
+    "node": ">= 12.14.1",
+    "npm": ">= 6.13.4",
+    "yarn": "^1.21.1"
   },
   "browserslist": [
     ">0.2%",
