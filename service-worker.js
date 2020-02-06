@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/React-SPA-IP-checker/precache-manifest.1cfd8a146d3c96e5d6b7d479d78a1ff9.js"
+  "/React-SPA-IP-checker/precache-manifest.587099f8c932444d0c716fcfbd09424f.js"
 );
 
 self.addEventListener('message', (event) => {
