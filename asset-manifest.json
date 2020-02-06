@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/React-SPA-IP-checker/static/css/main.71cbc92e.chunk.css",
+    "main.js": "/React-SPA-IP-checker/static/js/main.e40fa817.chunk.js",
+    "main.js.map": "/React-SPA-IP-checker/static/js/main.e40fa817.chunk.js.map",
+    "runtime-main.js": "/React-SPA-IP-checker/static/js/runtime-main.2ecd0fd4.js",
+    "runtime-main.js.map": "/React-SPA-IP-checker/static/js/runtime-main.2ecd0fd4.js.map",
+    "static/js/2.55d4c28a.chunk.js": "/React-SPA-IP-checker/static/js/2.55d4c28a.chunk.js",
+    "static/js/2.55d4c28a.chunk.js.map": "/React-SPA-IP-checker/static/js/2.55d4c28a.chunk.js.map",
+    "index.html": "/React-SPA-IP-checker/index.html",
+    "precache-manifest.1cfd8a146d3c96e5d6b7d479d78a1ff9.js": "/React-SPA-IP-checker/precache-manifest.1cfd8a146d3c96e5d6b7d479d78a1ff9.js",
+    "service-worker.js": "/React-SPA-IP-checker/service-worker.js",
+    "static/css/main.71cbc92e.chunk.css.map": "/React-SPA-IP-checker/static/css/main.71cbc92e.chunk.css.map",
+    "static/js/2.55d4c28a.chunk.js.LICENSE.txt": "/React-SPA-IP-checker/static/js/2.55d4c28a.chunk.js.LICENSE.txt",
+    "static/media/ip.08e43382.svg": "/React-SPA-IP-checker/static/media/ip.08e43382.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ecd0fd4.js",
+    "static/js/2.55d4c28a.chunk.js",
+    "static/css/main.71cbc92e.chunk.css",
+    "static/js/main.e40fa817.chunk.js"
+  ]
+}
