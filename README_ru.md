@@ -1,5 +1,11 @@
 # React-SPA-IP-check
 
+___
+
+[https://al3xsus.github.io/React-SPA-IP-checker/](https://al3xsus.github.io/React-SPA-IP-checker/)
+
+___
+
 Простое SPA для получения информации по IP адресу. 
 Использован стек технологий React (create-react-app), Semantic UI React, SPA, localStorage.
 Для получения информации об IP было использовано API [https://2ip.ua/ru/api/our-api](https://2ip.ua/ru/api/our-api).
