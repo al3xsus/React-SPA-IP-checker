@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "56277777884b4fc05e736f8b6adae45d",
+    "revision": "15fb082a41fe286259820f90f82e0238",
     "url": "/React-SPA-IP-checker/index.html"
   },
   {
-    "revision": "a3d7dbe68434fdf2d116",
+    "revision": "dce1f3f43091911aa38a",
     "url": "/React-SPA-IP-checker/static/css/main.71cbc92e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/React-SPA-IP-checker/static/js/2.55d4c28a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a3d7dbe68434fdf2d116",
-    "url": "/React-SPA-IP-checker/static/js/main.5deff80e.chunk.js"
+    "revision": "dce1f3f43091911aa38a",
+    "url": "/React-SPA-IP-checker/static/js/main.c794e230.chunk.js"
   },
   {
     "revision": "cc71ed8a5891db2d94d5",
