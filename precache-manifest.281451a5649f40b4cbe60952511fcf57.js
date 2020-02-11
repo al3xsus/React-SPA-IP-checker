@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "97d25d97c49fd4922248f29f1a2d3c64",
+    "revision": "b94efbcfc00daef867e4c6d6b2f91de3",
     "url": "/React-SPA-IP-checker/index.html"
   },
   {
-    "revision": "02176a1f8c4072abf458",
-    "url": "/React-SPA-IP-checker/static/css/main.71cbc92e.chunk.css"
+    "revision": "95ef8590ff879e2cba10",
+    "url": "/React-SPA-IP-checker/static/css/main.c5c85b43.chunk.css"
   },
   {
-    "revision": "7fe6c089c4fc54d3febe",
-    "url": "/React-SPA-IP-checker/static/js/2.55d4c28a.chunk.js"
+    "revision": "35dcc229b1b814a0627b",
+    "url": "/React-SPA-IP-checker/static/js/2.2e9a98f4.chunk.js"
   },
   {
     "revision": "967c3aa677d48917bda81b3b2ff2693c",
-    "url": "/React-SPA-IP-checker/static/js/2.55d4c28a.chunk.js.LICENSE.txt"
+    "url": "/React-SPA-IP-checker/static/js/2.2e9a98f4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "02176a1f8c4072abf458",
-    "url": "/React-SPA-IP-checker/static/js/main.7a4d1cda.chunk.js"
+    "revision": "95ef8590ff879e2cba10",
+    "url": "/React-SPA-IP-checker/static/js/main.a3fa287b.chunk.js"
   },
   {
     "revision": "cc71ed8a5891db2d94d5",
