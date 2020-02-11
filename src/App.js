@@ -1,6 +1,4 @@
 import React, {Fragment} from 'react';
-import {Route} from "react-router-dom";
-import {HashLink as Link} from "react-router-hash-link";
 import MainFormContainer from './Containers/MainFormContainer';
 import './App.css';
 
@@ -9,24 +7,18 @@ const App = () => (
         <header>
             <ul className={"header"}>
                 <li>
-                    <Link smooth="true" to="#IP_input_form">
-                        Input form
-                    </Link>
+                    <a href={'#IP_input_form'}>Input form</a>
                 </li>
                 <li>
-                    <Link smooth="true" to="#IP_result_current">
-                        Results
-                    </Link>
+                    <a href={'#IP_result_current'}>Results</a>
                 </li>
                 <li>
-                    <Link smooth="true" to="#IP_result_history">
-                        History
-                    </Link>
+                    <a href={'#IP_result_history'}>History</a>
                 </li>
             </ul>
         </header>
         <main>
-            <Route exact path="/" component={MainFormContainer}/>
+            <MainFormContainer/>
         </main>
     </Fragment>
 );
